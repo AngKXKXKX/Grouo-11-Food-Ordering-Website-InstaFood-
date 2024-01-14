@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<section id="FoodCategory">
+    <html lang="en">
+        <head>        
+            <link rel="stylesheet"href="general.css">
+            <link rel="stylesheet"href="FoodCategory.css">
+            <script src="FoodCategory.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8">
+            <title>Food Category</title>
+        </head>
+
+        <body>
+            <header>
+                <img id="logo"src="images/logo.png"alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="HomePage.html"id="home">Home</a></li>
+                        <li><a href="AboutUs.html"id="aboutUs">About Us</a></li>
+                        <li><a href="FoodCategory.html"id="category">Food Category</a></li>
+                        <li><a href="Cart.html"id="cart">Cart</a></li>
+                        <li><a href="Feedback.html"id="feedback">Feedback</a></li>
+                    </ul>
+                </nav>
+                <i class='far fa-user-circle'>  Siti Aisyah</i>
+            </header>
+            
+            <main>
+                <section id="foodCategory">
+                    <form name="myForm"method="post"onsubmit="return viewRestaurant()">
+                        <section class="category">
+                            <button type="submit"value="local">Local</button>
+                            <button type="submit"value="japanese">Japanese</button>
+                            <button type="submit"value="western">Western</button>
+                            <button type="submit"value="Korean">Korean</button>
+                        </section>
+                        <section class="category">
+                            <button type="submit"value="hotpot">Hot Pot</button>
+                            <button type="submit"value="noodles">Noodles</button>
+                            <button type="submit"value="rice">Rice</button>
+                            <button type="submit"value="chickenRice">Chicken Rice</button>
+                        </section>
+                        <section class="category">
+                            <button type="submit"value="beverages">Beverages</button>
+                            <button type="submit"value="desserts">Desserts</button>
+                            <button type="submit"value="fastFood">Fast Food</button>
+                            <button type="submit"value="halal">Halal</button>
+                        </section>
+                    </form>
+                </section>
+    
+                <p class="promoTitle">Special Promo</p>
+                <section class="specialPromo">
+                    <div class="promo">
+                        <img src="images/promo1.jpg"alt="Desserts"width="90%">
+                        <p class="promoFood">Burger</p>
+                        <p class="foodDesc">Indulge in the deliciousness of our classic burger with a 
+                            tempting 20% off! Don't miss out on this savory offer. Limited time only!</p>
+                    </div>
+                    <div class="promo">
+                        <img src="images/promo2.jpg"alt="Korean Food"width="90%">
+                        <p class="promoFood">Noodles</p>
+                        <p class="foodDesc">Spice up your day with a 50% discount on our new arrival, "Hot & Spicy Noodles"! 
+                            Plus, enjoy the added bonus of free delivery. </p>
+                    </div>
+                    <div class="promo">
+                        <img src="images/promo3.jpg"alt="Noodles"width="90%">
+                        <p class="promoFood">Poke Bowl</p>
+                        <p class="foodDesc">Dive into a culinary delight with our signature poke bowl, now available at an 
+                            incredible 50% discount. Hurry, this offer won't last long!</p>
+                    </div>
+                    <div class="promo">
+                        <img src="images/promo4.jpg"alt="Noodles"width="90%">
+                        <p class="promoFood">Fried Chicken</p>
+                        <p class="foodDesc">Today's exclusive deal: savor our signature grilled chicken drumstick at a remarkable
+                            50% off! Act fast, as this offer is valid for today only.</p>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <img id="logo"src="images/logo.png"alt="logo">
+                <p> &copy; 2023 InstaFood. All rights reserved.</p>
+            </footer>
+
+        </body>  
+    </html>
+</section>

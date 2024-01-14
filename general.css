@@ -1,0 +1,113 @@
+header{
+  background-color: #FE724C;
+  margin-top: 0;
+  display:flex;
+  height:50px;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+
+button {
+border: none;
+text-align: center;
+font-weight: bold;
+display: block;
+margin: 0px 5px;
+width: 7%;
+height: 30px;
+cursor: pointer;
+font-size: 85%;
+}
+#login{background-color: white;color:black;} 
+#signup{background-color: black;color:white;} 
+#login:hover,#signup:hover{background-color:#FFA07A;}
+
+footer{
+  background-color: #FE724C;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  color: white;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+footer p{
+  text-align: center;
+  margin-right: 10px;
+}
+footer button{background-color:#FE724C;color:white;border:solid 1.5px white;font-weight: lighter;width:15%} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+float: left;
+margin:0px;
+}
+li a {
+background-color: #FE724C;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: #FFC300;
+}
+
+
+body{
+  margin:0px;
+  background-color: #FFDAB9	;
+  font-size: 15px;
+  font-family: serif;
+}
+
+header nav{
+  align-items: center;
+  text-align: center;
+  margin:auto;
+}
+
+#logo{
+  width:4%;
+  margin-left:10px;
+}
+
+i{
+  color: white;
+  font-size: 100%;
+  right:1px;
+  width:8%;
+  
+}
+i:hover{font-size: 110%;
+}
+
+*{
+font-size: 100%;
+font-family: 'Times New Roman', Times, serif;
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+@media only screen and (max-width: 600px) {
+button {
+  width: 100%; 
+}
+
+footer button {
+  width: 100%; 
+}
+}

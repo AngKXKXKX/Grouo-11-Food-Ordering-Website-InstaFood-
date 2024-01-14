@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="foodStatus.css">
+    <script type="text/javascript"src="FoodStatus.js"></script>
+    <title>Food Status</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="HomePage.html"id="home">Home</a></li>
+                <li><a href="AboutUs.html"id="aboutUs">About Us</a></li>
+                <li><a href="FoodCategory.html"id="category">Food Category</a></li>
+                <li><a href="Cart.html"id="cart">Cart</a></li>
+                <li><a href="Feedback.html"id="feedback">Feedback</a></li>
+            </ul>
+        </nav>
+        <i class='far fa-user-circle'> Siti Aisyah</i>
+    </header>
+
+    <main>
+        <div class="contain">
+            <div class="orderDetails">
+                <div class="container"><h2>Order Details</h2></div>
+                <div class=details >
+                    <table id="order">
+                    </table>
+                </div>                
+            </div>
+
+            <div class="progressDetails"style="margin-left: 15%;">
+                <h3>Estimate Time: <span id="datetime"></span></h3>
+                <div class="progressBar">
+                    <div class=progress></div>
+                    <div class="status">
+                        <h3>Preparing</h3>
+                        <h3>Out for Delivery</h3>
+                        <h3>Delivered</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img id="logo"src="images/logo.png" alt="logo">
+        <p> &copy; 2023 InstaFood. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

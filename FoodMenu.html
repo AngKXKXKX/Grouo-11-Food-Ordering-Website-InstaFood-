@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="FoodMenu.css">
+  <script type="text/javascript" src="FoodMenu.js"></script>
+  <title>Food Menu</title>
+  
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="images/logo.png" alt="logo">
+    <nav>
+      <ul>
+        <li><a href="HomePage.html"id="home">Home</a></li>
+        <li><a href="AboutUs.html"id="aboutUs">About Us</a></li>
+        <li><a href="FoodCategory.html"id="category">Food Category</a></li>
+        <li><a href="Cart.html"id="cart">Cart</a></li>
+        <li><a href="Feedback.html"id="feedback">Feedback</a></li>
+      </ul>
+    </nav>
+    <i class='far fa-user-circle'> Siti Aisyah</i>
+  </header>
+
+<main>
+  <div class="restaurant-info">
+      <span class="restaurant-name"id="restaurantName"><b>The Garden of Eat’n</b></span>
+      <i class="fa fa-star" style="color: yellow;"></i>
+      <i class="fa fa-star" style="color: yellow;"></i>
+      <i class="fa fa-star" style="color: yellow;"></i>
+      <i class="fa fa-star" style="color: yellow;"></i>
+      <i class="fa fa-star" style="color: yellow;"></i>
+  </div>
+
+  <div class="grey-words">
+    <span>RM10.00 minimum</span>
+    <span> | </span>
+    <span style="color:#000000;"><b>Free Delivery</b></span>
+    <span> | </span>
+    <span>1 km away</span>
+  </div>
+
+  <div class="line-divider"></div>
+
+  <div id="category">
+    <a href="#all" class="button">All</a>
+    <a href="#main" class="button">Main Courses</a>
+    <a href="#dessert" class="button">Desserts</a>
+    <a href="#drink" class="button">Drinks</a>
+  </div>
+
+  <div class="popular-dish">Popular Dish</div>
+
+  <!--main-->
+  <div id="main">
+    <h5>Noodles</h5>
+    <div class="dish-card">
+      <img src="images/food1.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Salted Egg Spaghetti With Shrimp</b></p>
+        <p class="price"value="15.99">RM15.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+  
+    <div class="dish-card">
+      <img src="images/pasta.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Spaghetti Bolognese</b></p>
+        <p class="price">RM12.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>      
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div><br>
+
+    <h5>Meat</h5>
+    <div class="dish-card">
+      <img src="images/food3.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Grilled Steak With Wedges</b></p>
+        <p class="price">RM20.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/food4.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>BBQ Grilled Chicken Breast</b></p>
+        <p class="price">RM17.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+  </div><br><br>
+
+    <!--dessert-->
+    <div id="dessert">
+      <h5>Dessert</h5>
+      <div class="dish-card">
+        <img src="images/dessert1.jpg" alt="Dish Image" class="dish-image">
+        <div class="dish-details">
+          <p class="food"><b>Strawberry Waffle</b></p>
+          <p class="price">RM13.99</p>
+          <div class="counter">
+            <button class="btn" onclick="decrementCount(this)">-</button>
+            <div class="count">0</div>
+            <button class="btn" onclick="incrementCount(this)">+</button>
+          </div>
+          <button class="addToCartBtn">Add To Cart</button>
+        </div>
+      </div>
+  
+      <div class="dish-card">
+        <img src="images/dessert2.jpg" alt="Dish Image" class="dish-image">
+        <div class="dish-details">
+          <p class="food"><b>Tiramisu</b></p>
+          <p class="price">RM11.99</p>
+          <div class="counter">
+            <button class="btn" onclick="decrementCount(this)">-</button>
+            <div class="count">0</div>
+            <button class="btn" onclick="incrementCount(this)">+</button>
+          </div>
+          <button class="addToCartBtn">Add To Cart</button>
+        </div>
+      </div>
+    </div><br><br>
+
+   <!--drink-->
+   <div id="drink">
+    <h5>Coffee</h5>
+    <div class="dish-card">
+      <img src="images/drink.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Hot Mocha</b></p>
+        <p class="price">RM10.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+  
+    <div class="dish-card">
+      <img src="images/drink2.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Cold Mocha</b></p>
+        <p class="price">RM11.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/cappuccino.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Hot Cappuccino</b></p>
+        <p class="price">RM10.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+  
+    <div class="dish-card">
+      <img src="images/drink3.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Cold Capuccino</b></p>
+        <p class="price">RM11.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div><br>
+
+    <h5>Fruit Juice</h5>
+    <div class="dish-card">
+      <img src="images/drink4.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Mango Juice</b></p>
+        <p class="price">RM8.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/drink5.jpg" alt="Dish Image" class="dish-image">
+      <div class="dish-details">
+        <p class="food"><b>Watermelon Juice</b></p>
+        <p class="price">RM6.99</p>
+        <div class="counter">
+          <button class="btn" onclick="decrementCount(this)">-</button>
+          <div class="count">0</div>
+          <button class="btn" onclick="incrementCount(this)">+</button>
+        </div>
+        <button class="addToCartBtn">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="bottom-buttons">
+    <a href="restaurantMenu.html" class="bottom-left-button">Back</a>
+    <a href="Cart.html" class="bottom-right-button">View Cart</a>
+  </div>
+</main>
+
+  <footer>
+      <img id="logo"src="images/logo.png" alt="logo">
+      <p> &copy; 2023 InstaFood. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

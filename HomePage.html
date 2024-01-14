@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet"href="general.css">
+            <link rel="stylesheet"href="HomePage.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&effect=shadow-multiple">
+            <script src="HomePage.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8">
+            <title>Home Page</title>
+        </head>
+
+        <body>
+            <header>
+                <img id="logo"src="images/logo.png"alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="HomePage.html"id="home">Home</a></li>
+                        <li><a href="AboutUs.html"id="aboutUs">About Us</a></li>
+                        <li><a href="FoodCategory.html"id="category">Food Category</a></li>
+                        <li><a href="Cart.html"id="cart">Cart</a></li>
+                        <li><a href="Feedback.html"id="feedback">Feedback</a></li>
+                    </ul>
+                </nav>
+                <button type="submit"value="Login"id="login"name="login">Login</button>
+                <button type="submit"value="Sign Up"id="signup"name="signup">Sign Up</button>
+            </header>
+            
+            <section id="HomePage">
+                <section id="intro">
+                    <div class="intro">
+                        <p id="slogan">Don't starve;<br>just order.</p>
+                        <p>Come and explore a world of flavours right at your fingertips! 
+                        We provide you the smooth and enjoyable experience of ordering your preferred meals 
+                        from the convenience of your home.</p>
+                        <form name="myForm"method="post"onsubmit="return viewCategory()">
+                            <button type="submit"value="Delivery">Delivery</button>
+                            <button type="submit"value="Pick Up">Pick Up</button>
+                        </form>
+                    </div>
+                    
+                    <div class="intro">
+                        <div class="slideshow">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1/3</div>
+                                <img src="images/intro1.jpg"alt="intro1"width="80%">
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2/3</div>
+                                <img src="images/intro2.jpg"alt="intro2"width=80%>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">3/3</div>
+                                <img src="images/intro3.jpg"alt="intro3"width=80%>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <p class="bestSellingTitle">Our Best Delivered Category</p>
+                <section class="bestSell">
+                    <div class="category">
+                        <img src="images/fast_food.jpg"alt="Fast Food"width="80%">
+                        <p>Fast Food</p>
+                    </div>
+                    <div class="category">
+                        <img src="images/local_food.jpg"alt="Local Food"width="80%">
+                        <p>Local Food</p>
+                    </div>
+                    <div class="category">
+                        <img src="images/hotpot.jpg"alt="Hot Pot"width="80%">
+                        <p>Hot Pot</p>
+                    </div>
+                </section>
+
+                <p class="bestSellingTitle">Our Best Pick Up Category</p>
+                <section class="bestSell">
+                    <div class="category">
+                        <img src="images/desserts.jpg"alt="Desserts"width="80%">
+                        <p>Desserts</p>
+                    </div>
+                    <div class="category">
+                        <img src="images/korean_food.jpg"alt="Korean Food"width="80%">
+                        <p>Korean Food</p>
+                    </div>
+                    <div class="category">
+                        <img src="images/noodles.jpg"alt="Noodles"width="80%">
+                        <p>Noodles</p>
+                    </div>
+                </section>
+            </section>
+
+            <footer>
+                <img id="logo"src="images/logo.png"alt="logo">
+                <p> &copy; 2023 InstaFood. All rights reserved.</p>
+                <button type="submit"value="download"id="download"name="download">Download Now</button>
+            </footer>
+
+        </body>  
+        <script>
+            var slideIndex=0;
+            showSlides();
+        </script>
+    </html>

@@ -1,0 +1,76 @@
+#category{
+  text-shadow: 3px 3px 8px white;
+}
+
+#foodCategory{
+  padding:20px;
+}
+.category{
+    max-width:70%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+
+main{
+  height: fit-content;
+  margin-bottom:30px;
+}
+
+button {
+  border: none;
+  text-align: center;
+  display: block;
+  font-size: 100%;
+  font-weight: lighter;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px 5px;
+  width: 20%;
+  height: 50px;
+  cursor: pointer;
+  background-color: black;
+  color:white;
+}
+
+button:hover{
+  background-color: #303030;
+}
+
+.promoTitle{
+  text-align: center;
+  font-size: 30px;
+  font-family:fantasy;
+  margin:auto;
+  padding-top:20px;
+  width:100%;
+  background-color: rgb(212, 240, 249);
+  text-shadow: 2px 2px 8px coral;
+}
+.specialPromo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  margin:auto;
+  padding:30px;
+  height: 410px;
+  background-color:  rgb(212, 240, 249);
+}
+.promo{
+  width:20%;
+  margin:auto;
+  text-align:justify;
+}
+
+.promoFood{
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin:5px auto 10px auto;
+}
+
+.foodDesc{
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}

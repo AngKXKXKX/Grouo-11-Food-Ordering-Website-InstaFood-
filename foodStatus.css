@@ -1,0 +1,61 @@
+#cart{
+    text-shadow: 3px 3px 8px white;
+  }
+  
+.orderDetails{
+    border: 2px solid black;
+    height: auto;
+    width:80%;
+    margin:auto; 
+}
+
+.contain{
+    margin-top: 10%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
+    padding:autol
+}
+
+.container{
+    border: 2px solid black;
+    background-color: darksalmon;
+    align-items: center;
+    text-align: center;
+}
+.progressDetails{
+    width: 80%;
+}
+
+.progressBar{
+    border: 1px solid black;
+    height: 24px;
+    width: 80%;
+    background-color: rgb(200, 239, 252);
+}
+
+.progressBar .progress{
+    width: 20%;
+    background-color: rgb(96, 182, 235);
+    height: 24px;
+}
+.status{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #be957c;
+    text-align: left;
+    padding: 8px;
+  }
+  

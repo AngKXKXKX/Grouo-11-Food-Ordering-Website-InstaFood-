@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="Feedback.css">
+  <script src="feedback.js"></script>
+  <title>Feedback</title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="images/logo.png" alt="logo">
+    <nav>
+      <ul>
+        <li><a href="HomePage.html"id="home">Home</a></li>
+        <li><a href="AboutUs.html"id="aboutUs">About Us</a></li>
+        <li><a href="FoodCategory.html"id="category">Food Category</a></li>
+        <li><a href="Cart.html"id="cart">Cart</a></li>
+        <li><a href="Feedback.html"id="feedback">Feedback</a></li>
+      </ul>
+    </nav>
+    <i class='far fa-user-circle'> Siti Aisyah</i>
+  </header>
+  
+  <main>
+    <div class="title-container">
+      <h2>Leave a Reviews</h2>
+    </div>
+    <div class="title-divider"></div>
+
+    <div class="form-container">
+      <form action="#" method="post">
+        <div class="form-row">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name..">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email..">
+          </div>
+        </div>
+
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required placeholder="Your subject..">
+        </div>
+
+        <div>
+          <label for="description">Message:</label>
+          <textarea id="description" name="description" rows="6" required placeholder="Write your review.."></textarea>
+        </div>
+      </form>
+    </div>  
+    <form name="submitForm"method="post"onsubmit="return msg()">
+      <button class="submitButton"type="submit">Submit &rarr;</button>
+    </form>
+  </main>
+   
+  <footer>
+    <img id="logo" src="images/logo.png" alt="logo">
+    <p> &copy; 2023 InstaFood. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

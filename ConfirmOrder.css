@@ -1,0 +1,101 @@
+#cart{
+text-shadow: 3px 3px 8px white;
+}
+
+*{
+  font-size: 15px;
+}
+
+p,label,input{
+  margin:8px 0px;
+}
+
+#deliveryDetails,#feesDetails,#orderForm{
+  background-color: #F2BAAF;
+  color: black;
+  padding: 0px 8px;
+}
+#deliveryDetails{
+  display: flex;
+  justify-content: space-between;
+  margin:auto;
+  align-items: end;
+}
+.deliveryInfo{
+  width:50%;
+  margin:auto;
+  font-size:15px;
+}
+h3{
+  margin:15px 0px 5px 10px;
+  font-size: 25px;
+}
+table, tr, td {
+  border: 1px solid black;
+}
+table p{
+  font-size:23px;
+  font-weight: bold;
+  padding:10px 0px;
+
+}
+.foodDetails{
+  margin-left: 15px;
+}
+#fees{
+  display: flex;
+  justify-content:flex-start;
+  align-items: left;
+  margin:auto;
+  width:400px;
+  float: left;
+}
+#fees button{
+  background-color: darksalmon;
+  color:white;
+  font-size: 12px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  width:120px;
+  margin:auto;
+  margin-left: 10px;
+}
+#fees button:hover{
+  background-color: indianred;
+}
+
+#orderForm{
+  width:500px;
+  padding:5px;
+}
+#cutleryRadio{
+  display: flex;
+  align-items: left;
+}
+#confirmation{
+  width:250px;
+  float:right;
+  height:170px;
+  text-align: right;
+}
+#confirmation button{
+  background-color: black;
+  color:white;
+  width: 100px;
+  float: right;
+  font-size: 15px;
+  height:40px;
+  margin:5px 5px;
+}
+#confirmation button:hover{
+  background-color: rgba(12, 12, 12, 0.913);
+}
+#placeOrder{
+  display: flex;
+  justify-content: right;
+  float: right;
+  background-color: rgb(198, 227, 245);
+}
+#placeOrder p{
+  margin:auto;
+}
+

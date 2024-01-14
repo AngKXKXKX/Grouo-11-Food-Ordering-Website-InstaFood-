@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="ConfirmOrder.css">
+    <script type="text/javascript" src="ConfirmOrder.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Confirm Order</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="HomePage.html" id="home">Home</a></li>
+                <li><a href="AboutUs.html" id="aboutUs">About Us</a></li>
+                <li><a href="FoodCategory.html" id="category">Food Category</a></li>
+                <li><a href="Cart.html" id="cart">Cart</a></li>
+                <li><a href="Feedback.html" id="feedback">Feedback</a></li>
+            </ul>
+        </nav>
+        <i class='far fa-user-circle'>  Siti Aisyah</i>
+    </header>
+
+    <section id="ConfirmOrder">
+        <div id="deliveryDetails">
+            <p class="deliveryInfo"><span><i class='fas fa-map-marker-alt' style="color:black;"></i></span>222 Jalan Sultan Iskandar Shah, 30000 Ipoh, Perak</p>
+            <div class="deliveryInfo">
+                <label for="deliveryTime">Please select your delivery time</label>
+                <input type="datetime-local" id="deliveryTime" name="deliveryTime">
+            </div>
+        </div>
+
+        <h3>Order Summary</h3>
+        <div id="orderDetails" style="width:70%">
+            <table id="table">
+                <tr>
+                    <td class="figure"style="width:25%"><img src="images/pasta.jpg"alt="pasta"width="100%"></td>
+                    <td>
+                        <div class="foodDetails">
+                        <p class="foodname">Spaghetti Bolognese</p>
+                        <small class="quantity">Quantity: <span id="quantity">1</span></small><br>
+                        <small class="price">Price: RM<span id="price">12.99</span> /unit</small><br>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="fees">
+            <div id="feesDetails">
+                <p id="subtotal"></p>
+                <p id="delivery"value="4">Delivery Fee: RM4.00</p>
+            </div>
+            <button type="submit">Apply Voucher</button>
+        </div>
+        <br><br><br><br><br>
+
+        <div id="orderForm">
+            <form method="get">
+                <label for="contact">Contact: </label>
+                <input type="tel" id="contact" name="contact" placeholder="011-1111111" pattern="[0-9]{3}-[0-9]{7}" size="15px" required autocomplete><br>
+
+                <label for="comment">Add Comment: </label>
+                <textarea id="comment" name="comment" cols="50" rows="5" style="resize:none"></textarea>
+                <br>
+
+                <div id="cutleryRadio">
+                    <label for="cutlery">Do you need cutlery?</label>
+                    <div class="cutleryChoice" name="cutleryChoice">
+                        <input type="radio" id="cutleryYes" name="cutlery" value="Yes" required>
+                        <label for="cutleryYes">Yes</label><br>
+                        <input type="radio" id="cutleryNo" name="cutlery" value="No" required>
+                        <label for="cutleryNo">No</label><br>
+                    </div>
+                </div>
+
+                <label id="payment">Select Payment Method: </label>
+                <select name="paymentMethod" id="paymentMethod" required>
+                    <option value="Cash"><i class="&#128181"></i>Cash On Delivery</option>
+                    <option value="Credit/Debit"><i class="fab fa-cc-mastercard"></i>Credit/Debit</option>
+                    <option value="Online Banking"><i class="fab fa-cc-paypal"></i>Online Banking</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="confirmation">
+            <form name="cancelForm" method="post" onsubmit="return viewFood()">
+                <button type="submit">Cancel</button><br><br>
+            </form>
+            <div id="placeOrder">
+                <p id="total">Total: RM38.97</p>
+                <form name="submitForm" method="post" onsubmit="return viewStatus()">
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img id="logo" src="images/logo.png" alt="logo">
+        <p> &copy; 2023 InstaFood. All rights reserved.</p>
+    </footer>
+
+</body>  
+</html>
