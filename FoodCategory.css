@@ -15,7 +15,7 @@
 
 main{
   height: fit-content;
-  margin-bottom:30px;
+  margin-bottom:100px;
 }
 
 button {
@@ -54,7 +54,7 @@ button:hover{
   width:100%;
   margin:auto;
   padding:30px;
-  height: 410px;
+  height: fit-content;
   background-color:  rgb(212, 240, 249);
 }
 .promo{
