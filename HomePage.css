@@ -35,6 +35,11 @@ p{
 .intro button{
   margin:5px 5px;
 }
+#HomePage{
+	height:fit-content;
+	margin-bottom:100px;
+}
+
 #HomePage button{
   float: left;
   width:120px;
