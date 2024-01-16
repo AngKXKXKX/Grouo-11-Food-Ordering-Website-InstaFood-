@@ -119,7 +119,7 @@ img{vertical-align:middle;}
   font-weight: bolder;
 }
 .bestSell{
-  max-height: 300px;
+  max-height: fit-content;
   position: relative;
   display:flex;
   justify-content: space-between;
