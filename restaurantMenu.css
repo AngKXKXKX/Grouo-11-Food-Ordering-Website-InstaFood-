@@ -54,7 +54,7 @@
 .ResDetails span{
     font-size: smaller;
 }
-.ResDetails h4,i,small{
+.ResDetails h4,.ResDetails i,.ResDetails small{
     margin:3% 0;
 }
 .ResDetails h4{
