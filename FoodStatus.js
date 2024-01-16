@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var storedCart = localStorage.getItem('cart');
+  var storedCart = localStorage.getItem('newCart');
   var cart = JSON.parse(storedCart) || [];
 
   var totalAmount=localStorage.getItem('total');
