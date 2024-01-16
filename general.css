@@ -28,7 +28,7 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: fit-content;
+  max-height: fit-content;
   font-size: 15px;
   color: white;
   display:flex;
